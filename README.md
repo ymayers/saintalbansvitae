@@ -24,11 +24,11 @@
 
 ## Overview
 
-_**The Saint Albans Vitae** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_**The Saint Albans Vitae** is a blog app where current and former community members can share St. Albans' rich history. The site will allow users to create posts and comments._
 
 ### Core Features
 
-_Lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_The site will allow users to post photos, with descriptions and have the ability to comment on community members' photos/articles.._
 
 - _Lorem ipsum, dolor sit amet,_
 - _consectetur adipiscing elit._
