@@ -1,4 +1,3 @@
-->
 # The Saint Albans Vitae
 
 ![Billie Holiday](https://i.pinimg.com/originals/6f/68/ac/6f68aca8aa1723798b5a19bb8a9c403e.gif)![Coltrane/Davis](https://thumbs.gfycat.com/SoreFloweryAdmiralbutterfly-small.gif)
@@ -37,8 +36,7 @@ _The site will allow users to create blog posts and upload photos, with the abil
 - _Log in_
 - _Write blog posts_
 - _Post photos_
-- _Comment on blog posts_ 
--_Learn about St. Albans' History from other Users_
+- _Comment on blog posts_ -_Learn about St. Albans' History from other Users_
 
 ### Team
 
@@ -173,9 +171,7 @@ src
 
 #### ERD Model
 
-![ERD](https://imgur.com/P173oqq.png)
-
-- Mobile Landing
+![ERD](https://imgur.com/gQ3ZtHT.png)
 
 #### Data Heirarchy
 
@@ -217,4 +213,3 @@ Post MVP, I'd like to implement an interactive timeline of the history of Saint 
 ---
 
 ![Ella Fitzgerald](https://66.media.tumblr.com/ba7f7d7db109cd3b8c81124194e6f675/tumblr_ooxr8h2mlX1qa8arko5_250.gif)
-<-
