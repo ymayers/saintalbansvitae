@@ -35,7 +35,6 @@ _The site will allow users to create blog posts and photos, with the ability to 
 - _Users will be able to post photos._
 - _Users will be able to comment._
 
-
 ### Goals
 
 - _Lorem ipsum, dolor sit amet,_
@@ -49,8 +48,8 @@ _The site will allow users to create blog posts and photos, with the ability to 
 Created, designed, and developed by [Yolea Mayers](https://github.com/yoleamayers) for the General Assembly Software Engineering Immersive (May '20 Cohort) Unit 4 Project.
 
 ### Permissions
-_Lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
 
+_Lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
 
 <br>
 
@@ -94,7 +93,7 @@ _The **Saint Albans Vitae** MVP is for the app to have full CRUD functionality a
 
 > Use this section to define your React components and the data architecture of your app.
 
-``` structure
+```structure
 
 src
 |__ assets/
@@ -124,19 +123,19 @@ src
 
 > Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
-|  Component      |    Type    | state | props | Description                                                      |
-| :----------:    | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|   Layout        | functional |   n   |   y   | _The Layout will contain the header and footer._                 |
-|   Header        | functional |   n   |   n   | _The Header will provide a link to each of the pages._           |
-|   Footer        | functional |   n   |   n   | _The Footer will contain copyright and contact information._     |
-|   App           | class      |   n   |   y   | _App will house all of the data and pass down info as props.     |
-|   Main          | class      |   y   |   y   | _Main will display all of the posts._                            |
-|   Signup        | class      |   y   |   y   | _Signup will use Auth to provide access to create content._      |
-|   Signin        | class      |   y   |   y   | _Signin will use Auth to provide access to content._             |
-|   CreatePost    | class      |   y   |   y   | _CreatePost will use props from App to create posts._            |
-|   EditPost      | class      |   y   |   y   | _EditPost will use props from App to edit posts._                |
-|   CreateComment | class      |   y   |   y   | _CreateComment will use props from App to create comments._      |
-|   EditComment   | class      |   y   |   y   | _EdittComment will use props from App to edit comments._         |
+|   Component   |    Type    | state | props | Description                                                   |
+| :-----------: | :--------: | :---: | :---: | :------------------------------------------------------------ |
+|    Layout     | functional |   n   |   y   | _The Layout will contain the header and footer._              |
+|    Header     | functional |   n   |   n   | _The Header will provide a link to each of the pages._        |
+|    Footer     | functional |   n   |   n   | _The Footer will contain copyright and contact information._  |
+|      App      |   class    |   n   |   y   | \_App will house all of the data and pass down info as props. |
+|     Main      |   class    |   y   |   y   | _Main will display all of the posts._                         |
+|    Signup     |   class    |   y   |   y   | _Signup will use Auth to provide access to create content._   |
+|    Signin     |   class    |   y   |   y   | _Signin will use Auth to provide access to content._          |
+|  CreatePost   |   class    |   y   |   y   | _CreatePost will use props from App to create posts._         |
+|   EditPost    |   class    |   y   |   y   | _EditPost will use props from App to edit posts._             |
+| CreateComment |   class    |   y   |   y   | _CreateComment will use props from App to create comments._   |
+|  EditComment  |   class    |   y   |   y   | _EdittComment will use props from App to edit comments._      |
 
 #### Component Estimates
 
@@ -148,7 +147,7 @@ src
 | Create CRUD Actions |    H     |     6 hrs      |     1 hrs     |     TBD     |
 | SignUp/SignIn       |    H     |     2 hrs      |     2 hrs     |     TBD     |
 | Add Contact Form    |    L     |     3 hrs      |     2 hrs     |     TBD     |
-| TOTAL               |          |    14 hrs      |     3 hrs     |     TBD     |
+| TOTAL               |          |     14 hrs     |     3 hrs     |     TBD     |
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
@@ -167,7 +166,7 @@ src
 
 > Use this section to display the database, table, and attribute heirarchy.
 
-``` structure
+```structure
 
 savitae_db
 |__ users/
@@ -178,26 +177,25 @@ savitae_db
 
 #### Data Heirarchy - Expected API Endpoints
 
-/home
-/user/:id
-/user/:id/createpost
-/user/:id/:post_id
-/user/:id/:post_id/edit
+_/home_
+_/user/:id_
+_/user/:id/createpost_
+_/user/:id/:post_id_
+_/user/:id/:post_id/edit_
 
 <br>
 
 ### Dependencies
 
+|   Library    | Description            |
+| :----------: | :--------------------- |
+|    React     | _Front End rendering._ |
+| React Router | _Front End rendering._ |
+|     CORS     | _Front End rendering._ |
 
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|      React       | _Front End rendering._                     |
-|   React Router   | _Front End rendering._                     |
-|       CORS       | _Front End rendering._                     |
+<br>
 
-<br> 
-
-***
+---
 
 > This section is not necessary for your pitch!
 
@@ -205,7 +203,7 @@ savitae_db
 
 > Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
-***
+---
 
 ## Code Showcase
 
@@ -214,8 +212,3 @@ savitae_db
 ## Code Issues & Resolutions
 
 > Use this section to list of all major issues encountered and their resolution, if you'd like.
-
-
-
-
-
