@@ -177,11 +177,11 @@ savitae_db
 
 #### Data Heirarchy - Expected API Endpoints
 
-_/home_
-_/user/:id_
-_/user/:id/createpost_
-_/user/:id/:post_id_
-_/user/:id/:post_id/edit_
+/home <br>
+/user/:id <br>
+/user/:id/createpost <br>
+/user/:id/:post_id <br>
+/user/:id/:post_id/edit <br>
 
 <br>
 
