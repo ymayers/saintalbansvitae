@@ -1,6 +1,6 @@
 # The Saint Albans Vitae
 
-![Billie Holiday](https://i.pinimg.com/originals/6f/68/ac/6f68aca8aa1723798b5a19bb8a9c403e.gif)![Coltrane](https://thumbs.gfycat.com/RemorsefulHauntingHog-size_restricted.gif)
+![Billie Holiday](https://i.pinimg.com/originals/6f/68/ac/6f68aca8aa1723798b5a19bb8a9c403e.gif)![Coltrane/Davis](https://thumbs.gfycat.com/SoreFloweryAdmiralbutterfly-small.gif)
 
 - [Overview](#Overview)
   - [Core Features](#Core-Features)
