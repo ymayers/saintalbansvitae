@@ -30,12 +30,10 @@ _**The Saint Albans Vitae** is a blog app where users can share St. Albans' rich
 
 _The site will allow users to create blog posts and photos, with the ability to comment on community members' photos/articles. Users will be able to:_
 
-
 - _Log in_
 - _Write blog posts_
 - _Post photos_
 - _Comment on blog posts_
-
 
 ### Team
 
@@ -50,7 +48,6 @@ _The **Saint Albans Vitae** MVP is for the app to have full CRUD functionality a
 ### Client (Front End)
 
 #### Wireframes
-
 
 ![Mobile Landing](https://imgur.com/nettmrK.png)
 
@@ -79,8 +76,6 @@ _The **Saint Albans Vitae** MVP is for the app to have full CRUD functionality a
 ![Mobile Edit Post Page](https://imgur.com/fb93gT7.png)
 
 - Mobile Edit Post Page
-
-
 
 #### Component Hierarchy
 
@@ -111,7 +106,6 @@ src
 ```
 
 #### Component Breakdown
-
 
 |   Component   |    Type    | state | props | Description                                                   |
 | :-----------: | :--------: | :---: | :---: | :------------------------------------------------------------ |
@@ -146,11 +140,11 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model.
+![ERD](https://imgur.com/P173oqq.png)
+
+- Mobile Landing
 
 #### Data Heirarchy
-
-> Use this section to display the database, table, and attribute heirarchy.
 
 ```structure
 
