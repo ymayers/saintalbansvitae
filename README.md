@@ -1,7 +1,6 @@
 # The Saint Albans Vitae
 
-![Billie Holiday](https://i.pinimg.com/originals/6f/68/ac/6f68aca8aa1723798b5a19bb8a9c403e.gif) ![Ella Fitzgerald](https://66.media.tumblr.com/ba7f7d7db109cd3b8c81124194e6f675/tumblr_ooxr8h2mlX1qa8arko5_250.gif) ![Coltrane](https://thumbs.gfycat.com/RemorsefulHauntingHog-size_restricted.gif)
-
+![Billie Holiday](https://i.pinimg.com/originals/6f/68/ac/6f68aca8aa1723798b5a19bb8a9c403e.gif)![Coltrane](https://thumbs.gfycat.com/RemorsefulHauntingHog-size_restricted.gif)
 
 - [Overview](#Overview)
   - [Core Features](#Core-Features)
@@ -213,3 +212,5 @@ savitae_db
 Post MVP, I'd like to implement an interactive timeline of the history of Saint Albans. I'd also like to expand the site to include current community events and happenings. Incorporation of the Framer Motion library is also a Post-MVP goal.
 
 ---
+
+![Ella Fitzgerald](https://66.media.tumblr.com/ba7f7d7db109cd3b8c81124194e6f675/tumblr_ooxr8h2mlX1qa8arko5_250.gif)
