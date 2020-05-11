@@ -1,6 +1,6 @@
 # The Saint Albans Vitae
 
-![St. Albans Mural](mural3.jpg)
+![St. Albans Mural](https://imgur.com/0TioESf)
 
 - [Overview](#Overview)
   - [Core Features](#Core-Features)
@@ -26,16 +26,17 @@
 
 ## Overview
 
-_**The Saint Albans Vitae** is a blog app where users can share St. Albans' rich history._
+_From the 1920s - 1970s, a small encalved of Southeastern Queens - St. Albans - was a place where famed musicians, athletes and professionals called home. **The Saint Albans Vitae** is a commemoration app, where users can share the community's rich history._
 
 ### Core Features
 
-_The site will allow users to create blog posts and photos, with the ability to comment on community members' photos/articles. Users will be able to:_
+_The site will allow users to create blog posts and upload photos, with the ability to comment on community members' photos/articles. Users will be able to:_
 
 - _Log in_
 - _Write blog posts_
 - _Post photos_
 - _Comment on blog posts_
+-_Learn about St. Albans' History from other Users_
 
 ### Team
 
@@ -45,7 +46,7 @@ Created, designed, and developed by [Yolea Mayers](https://github.com/yoleamayer
 
 ## MVP
 
-_The **Saint Albans Vitae** MVP is for the app to have full CRUD functionality and working authorization. The App will be styled similarly to wireframes, below. The **Saint Albans Vitae** will be responsive in Desktop, Mobile and iPad views._
+_The **Saint Albans Vitae** MVP is for the app to have full CRUD functionality and working authorization for sign up/ sign in functions. The App will be styled similarly to wireframes, below. The **Saint Albans Vitae** will be responsive in Desktop, Mobile and iPad views._
 
 ### Client (Front End)
 
@@ -210,6 +211,6 @@ savitae_db
 
 ## Post-MVP
 
-Post MVP, I'd like to implement an interactive timeline of the history of Saint Albans. I'd also like to expand the site to include current community events and happenings.
+Post MVP, I'd like to implement an interactive timeline of the history of Saint Albans. I'd also like to expand the site to include current community events and happenings. Incorporation of the Framer Motion library is also a Post-MVP goal.
 
 ---
