@@ -1,6 +1,6 @@
 # The Saint Albans Vitae
 
-![St. Albans Mural](https://imgur.com/VcBLVj8.png)
+![St. Albans Mural](https://i.pinimg.com/originals/6f/68/ac/6f68aca8aa1723798b5a19bb8a9c403e.gif)
 
 - [Overview](#Overview)
   - [Core Features](#Core-Features)
