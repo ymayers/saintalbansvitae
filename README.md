@@ -136,8 +136,6 @@ _The **Saint Albans Vitae** MVP is for the App to have full CRUD functionality a
 
 - iPad Edit Post Page
 
-
-
 #### Component Hierarchy
 
 ```structure
@@ -173,7 +171,7 @@ src
 |    Layout     | functional |   n   |   y   | _The Layout will contain the header and footer._              |
 |    Header     | functional |   n   |   n   | _The Header will provide a link to each of the pages._        |
 |    Footer     | functional |   n   |   n   | _The Footer will contain copyright and contact information._  |
-|      App      |   class    |   n   |   y   | \_App will house all of the data and pass down info as props. |
+|      App      |   class    |   y   |   y   | \_App will house all of the data and pass down info as props. |
 |     Main      |   class    |   y   |   y   | _Main will display all of the posts._                         |
 |    Signup     |   class    |   y   |   y   | _Signup will use Auth to provide access to create content._   |
 |    Signin     |   class    |   y   |   y   | _Signin will use Auth to provide access to content._          |
