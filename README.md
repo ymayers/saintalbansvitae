@@ -156,6 +156,9 @@ src
 
 ### Server (Back End)
 
+- _Backend - Ruby on Rails_
+- _Backend Deployment - Heroku_
+
 #### ERD Model
 
 > Use this section to display an image of a computer generated ERD model.
@@ -173,21 +176,24 @@ savitae_db
 
 ```
 
-#### Data Heirarchy
+#### Data Heirarchy - Expected API Endpoints
 
-> Use this section to display the expected endpoints from your API.
+/home
+/user/:id
+/user/:id/createpost
+/user/:id/:post_id
+/user/:id/:post_id/edit
 
 <br>
 
 ### Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project.
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Ruby on Rails   | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | _Front End rendering._                     |
+|   React Router   | _Front End rendering._                     |
+|       CORS       | _Front End rendering._                     |
 
 <br> 
 
