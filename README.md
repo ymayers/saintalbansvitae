@@ -1,3 +1,4 @@
+->
 # The Saint Albans Vitae
 
 ![Billie Holiday](https://i.pinimg.com/originals/6f/68/ac/6f68aca8aa1723798b5a19bb8a9c403e.gif)![Coltrane/Davis](https://thumbs.gfycat.com/SoreFloweryAdmiralbutterfly-small.gif)
@@ -26,16 +27,18 @@
 
 ## Overview
 
-_From the 1920s - 1970s, a small encalved of Southeastern Queens - St. Albans - was a place where famed musicians, athletes and professionals called home. **The Saint Albans Vitae** is a commemoration app, where users can share the community's rich history._
+_From the 1920s - 1970s, a small encalve of Southeastern Queens - St. Albans - was a place where famed musicians, athletes and professionals called home. **The Saint Albans Vitae** is a commemoration app, where users can share the community's rich history._
 
 ### Core Features
 
-_The site will allow users to create blog posts and upload photos, with the ability to comment on community members' photos/articles. Users will be able to:_
+_The site will allow users to create blog posts and upload photos, with the ability to comment on other community members' posts. Users will be able to:_
 
+- _Register_
 - _Log in_
 - _Write blog posts_
 - _Post photos_
-- _Comment on blog posts_ -_Learn about St. Albans' History from other Users_
+- _Comment on blog posts_ 
+-_Learn about St. Albans' History from other Users_
 
 ### Team
 
@@ -45,7 +48,7 @@ Created, designed, and developed by [Yolea Mayers](https://github.com/yoleamayer
 
 ## MVP
 
-_The **Saint Albans Vitae** MVP is for the app to have full CRUD functionality and working authorization for sign up/ sign in functions. The App will be styled similarly to wireframes, below. The **Saint Albans Vitae** will be responsive in Desktop, Mobile and iPad views._
+_The **Saint Albans Vitae** MVP is for the App to have full CRUD functionality and working authorization for registration and login functions. Styling of the App will be similar to wireframes, below with responsiveness for Desktop, Mobile and iPad views._
 
 ### Client (Front End)
 
@@ -214,3 +217,4 @@ Post MVP, I'd like to implement an interactive timeline of the history of Saint 
 ---
 
 ![Ella Fitzgerald](https://66.media.tumblr.com/ba7f7d7db109cd3b8c81124194e6f675/tumblr_ooxr8h2mlX1qa8arko5_250.gif)
+<-
