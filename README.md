@@ -24,17 +24,17 @@
 
 ## Overview
 
-_**The Saint Albans Vitae** is a blog app where current and former community members can share St. Albans' rich history. The site will allow users to create posts and comments._
+_**The Saint Albans Vitae** is a blog app where users can share St. Albans' rich history._
 
 ### Core Features
 
-_The site will allow users to post photos, with descriptions and have the ability to comment on community members' photos/articles.._
+_The site will allow users to create blog posts and photos, with the ability to comment on community members' photos/articles.._
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _Users will be able to log in._
+- _Users will be able to write blog posts._
+- _Users will be able to post photos._
+- _Users will be able to comment._
+
 
 ### Goals
 
@@ -58,7 +58,7 @@ _Lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. I
 
 > The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
-_The **Saint Albans Vitae** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_The **Saint Albans Vitae** MVP is for the app to have full CRUD functionality and working authorization. The App will be styled similarly to wireframes, below. The **Saint Albans Vitae** will be responsive in Desktop, Mobile and iPad views._
 
 ### Client (Front End)
 
@@ -109,7 +109,6 @@ src
         |__ Footer.jsx
       |__ App.jsx
       |__ Main.jsx
-      |__ Header.jsx
       |__ Sigup.jsx
       |__ Signin.jsx
       |__ CreatePost.jsx
@@ -125,13 +124,19 @@ src
 
 > Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
-|  Component   |    Type    | state | props | Description                                                      |
-| :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Layout    | functional |   n   |   y   | _The Layout will contain the header and footer._                 |
-|   Header     | functional |   n   |   n   | _The Header will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|  Component      |    Type    | state | props | Description                                                      |
+| :----------:    | :--------: | :---: | :---: | :--------------------------------------------------------------- |
+|   Layout        | functional |   n   |   y   | _The Layout will contain the header and footer._                 |
+|   Header        | functional |   n   |   n   | _The Header will provide a link to each of the pages._           |
+|   Footer        | functional |   n   |   n   | _The Footer will contain copyright and contact information._     |
+|   App           | class      |   n   |   y   | _App will house all of the data and pass down info as props.     |
+|   Main          | class      |   y   |   y   | _Main will display all of the posts._                            |
+|   Signup        | class      |   y   |   y   | _Signup will use Auth to provide access to create content._      |
+|   Signin        | class      |   y   |   y   | _Signin will use Auth to provide access to content._             |
+|   CreatePost    | class      |   y   |   y   | _CreatePost will use props from App to create posts._            |
+|   EditPost      | class      |   y   |   y   | _EditPost will use props from App to edit posts._                |
+|   CreateComment | class      |   y   |   y   | _CreateComment will use props from App to create comments._      |
+|   EditComment   | class      |   y   |   y   | _EdittComment will use props from App to edit comments._         |
 
 #### Component Estimates
 
@@ -139,9 +144,11 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Layout              |    H     |     3 hrs      |     2 hrs     |     TBD     |
+| Create CRUD Actions |    H     |     6 hrs      |     1 hrs     |     TBD     |
+| SignUp/SignIn       |    H     |     2 hrs      |     2 hrs     |     TBD     |
+| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |     TBD     |
+| TOTAL               |          |    14 hrs      |     3 hrs     |     TBD     |
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
@@ -159,10 +166,10 @@ src
 
 ``` structure
 
-database_db
+savitae_db
 |__ users/
-|__ resources/
 |__ posts/
+|__ comments/
 
 ```
 
@@ -180,9 +187,7 @@ database_db
 | :--------------: | :----------------------------------------- |
 |      React       | _Lorem ipsum dolor sit amet, consectetur._ |
 |   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|  Ruby on Rails   | _Lorem ipsum dolor sit amet, consectetur._ |
 
 <br> 
 
