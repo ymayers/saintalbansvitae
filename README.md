@@ -108,6 +108,36 @@ _The **Saint Albans Vitae** MVP is for the App to have full CRUD functionality a
 
 - Mobile Edit Post Page
 
+![iPad Landing](https://imgur.com/prrxphv.png)
+
+- iPad Landing
+
+![iPad Sign Up](https://imgur.com/nEhPw4e.png)
+
+- iPad Sign Up
+
+![iPad Sign In](https://imgur.com/vQmuP6I.png)
+
+- iPad Sign In
+
+![iPad Home Page](https://imgur.com/lI0tvrg.png)
+
+- iPad Home Page
+
+![iPad Single Post Page](https://imgur.com/MbXg4ZH.png)
+
+- iPad Single Post Page
+
+![iPad Create Post Page](https://imgur.com/DZ4VhHU.png)
+
+- iPad Create Post Page
+
+![iPad Edit Post Page](https://imgur.com/yjZ6tTL.png)
+
+- iPad Edit Post Page
+
+
+
 #### Component Hierarchy
 
 ```structure
