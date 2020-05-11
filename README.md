@@ -28,34 +28,22 @@ _**The Saint Albans Vitae** is a blog app where users can share St. Albans' rich
 
 ### Core Features
 
-_The site will allow users to create blog posts and photos, with the ability to comment on community members' photos/articles.._
+_The site will allow users to create blog posts and photos, with the ability to comment on community members' photos/articles. Users will be able to:_
 
-- _Users will be able to log in._
-- _Users will be able to write blog posts._
-- _Users will be able to post photos._
-- _Users will be able to comment._
 
-### Goals
+- _Log in_
+- _Write blog posts_
+- _Post photos_
+- _Comment on blog posts_
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
 
 ### Team
 
 Created, designed, and developed by [Yolea Mayers](https://github.com/yoleamayers) for the General Assembly Software Engineering Immersive (May '20 Cohort) Unit 4 Project.
 
-### Permissions
-
-_Lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
-
 <br>
 
 ## MVP
-
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
 _The **Saint Albans Vitae** MVP is for the app to have full CRUD functionality and working authorization. The App will be styled similarly to wireframes, below. The **Saint Albans Vitae** will be responsive in Desktop, Mobile and iPad views._
 
@@ -63,35 +51,38 @@ _The **Saint Albans Vitae** MVP is for the app to have full CRUD functionality a
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views.
 
-![Dummy Link](url)
+![Mobile Landing](https://imgur.com/nettmrK.png)
 
-- Desktop Landing
+- Mobile Landing
 
-![Dummy Link](url)
+![Mobile Sign Up](https://imgur.com/ttVnfAM.png)
 
-- Desktop Hero
+- Mobile Sign Up
 
-![Dummy Link](url)
+![Mobile Sign In](https://imgur.com/XmFA4rN.png)
 
-- Resource Index
+- Mobile Sign In
 
-![Dummy Link](url)
+![Mobile Home Page](https://imgur.com/wHjblaX.png)
 
-- Resource Show
+- Mobile Home Page
 
-![Dummy Link](url)
+![Mobile Single Post Page](https://imgur.com/AVmXQwd.png)
 
-- Tablet Resource Index
+- Mobile Single Post Page
 
-![Dummy Link](url)
+![Mobile Create Post Page](https://imgur.com/rOSR96Z.png)
 
-- Mobile Resource Index
+- Mobile Create Post Page
+
+![Mobile Edit Post Page](https://imgur.com/fb93gT7.png)
+
+- Mobile Edit Post Page
+
+
 
 #### Component Hierarchy
-
-> Use this section to define your React components and the data architecture of your app.
 
 ```structure
 
@@ -121,7 +112,6 @@ src
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
 |   Component   |    Type    | state | props | Description                                                   |
 | :-----------: | :--------: | :---: | :---: | :------------------------------------------------------------ |
@@ -139,8 +129,6 @@ src
 
 #### Component Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
-
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Layout              |    H     |     3 hrs      |     2 hrs     |     TBD     |
@@ -148,8 +136,6 @@ src
 | SignUp/SignIn       |    H     |     2 hrs      |     2 hrs     |     TBD     |
 | Add Contact Form    |    L     |     3 hrs      |     2 hrs     |     TBD     |
 | TOTAL               |          |     14 hrs     |     3 hrs     |     TBD     |
-
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
@@ -197,18 +183,8 @@ savitae_db
 
 ---
 
-> This section is not necessary for your pitch!
-
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+Post MVP, I'd like to implement an interactive timeline of the history of Saint Albans. I'd also like to expand the site to include current community events and happenings.
 
 ---
-
-## Code Showcase
-
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
-
-## Code Issues & Resolutions
-
-> Use this section to list of all major issues encountered and their resolution, if you'd like.
