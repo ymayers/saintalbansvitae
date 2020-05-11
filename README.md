@@ -1,5 +1,7 @@
 # The Saint Albans Vitae
 
+![St. Albans Mural](mural3.jpg)
+
 - [Overview](#Overview)
   - [Core Features](#Core-Features)
   - [Goals](#Goals)
