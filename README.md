@@ -71,7 +71,7 @@ _The **Saint Albans Vitae** MVP is for the app to have full CRUD functionality a
 
 - Desktop Single Post Page
 
-![Desktop Create Post Page](https://imgur.com/rOSR96Z.png)
+![Desktop Create Post Page](https://imgur.com/TaFnvq6.png)
 
 - Desktop Create Post Page
 
