@@ -51,13 +51,33 @@ _The **Saint Albans Vitae** MVP is for the app to have full CRUD functionality a
 
 #### Wireframes
 
-![Mobile Landing](https://imgur.com/nettmrK.png)
+![Desktop Landing](https://imgur.com/nettmrK.png)
 
-- Mobile Landing
+- Desktop Landing
 
-![Mobile Sign Up](https://imgur.com/ttVnfAM.png)
+![Desktop Sign Up](https://imgur.com/cUFLMK7.png)
 
-- Mobile Sign Up
+- Desktop Sign Up
+
+![Desktop Sign In](https://imgur.com/sdWbU6C.png)
+
+- Desktop Sign In
+
+![Desktop Home Page](https://imgur.com/S1X4Viw.png)
+
+- Desktop Home Page
+
+![Desktop Single Post Page](https://imgur.com/7WfiMQy.png)
+
+- Desktop Single Post Page
+
+![Desktop Create Post Page](https://imgur.com/rOSR96Z.png)
+
+- Desktop Create Post Page
+
+![Desktop Edit Post Page](https://imgur.com/05hTYi0.png)
+
+- Desktop Edit Post Page
 
 ![Mobile Sign In](https://imgur.com/XmFA4rN.png)
 
