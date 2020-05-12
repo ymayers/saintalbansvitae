@@ -10,7 +10,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1
   def show
-    render json: @post
+    render json: @post, include: :comments
   end
 
   # POST /posts
@@ -25,12 +25,19 @@ class PostsController < ApplicationController
   end
 
   # PATCH/PUT /posts/1
-  def update
-    if @post.update(post_params)
-      render json: @post
-    else
-      render json: @post.errors, status: :unprocessable_entity
-    end
+  # def update
+  #   if @post.update(post_params)
+  #     render json: @post
+  #   else
+  #     render json: @post.errors, status: :unprocessable_entity
+  #   end
+  # end
+
+  
+  def add_comment
+    @comment = Comment.find(params[:comment_id])
+    @post.comments << @comment
+    render json: @post, include: :comments
   end
 
   # DELETE /posts/1
