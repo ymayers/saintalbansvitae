@@ -1,15 +1,14 @@
 class CreateUsersController < ApplicationController
   before_action :set_create_user, only: [:show, :update, :destroy]
-  before_action :authorize_request, except: :create
+  # before_action :authorize_request, except: :create
 
-  # GET /create_users
+  # GET /users
   def index
-    @create_users = CreateUser.all
-
+    @users = CreateUser.all
     render json: @create_users
   end
 
-  # GET /create_users/1
+  # GET /users/1
   def show
     render json: @create_user
   end
@@ -48,6 +47,6 @@ class CreateUsersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def create_user_params
-      params.require(:create_user).permit(:username, :password)
+      params.require(:user).permit(:username, :password)
     end
 end
