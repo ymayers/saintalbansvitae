@@ -214,11 +214,12 @@ savitae_db
 
 #### Data Heirarchy - Expected API Endpoints
 
-/home <br>
-/user/:id <br>
-/user/:id/createpost <br>
-/user/:id/:post_id <br>
-/user/:id/:post_id/edit <br>
+localhost:3000/index <br>
+localhost:3000/user  <br>
+localhost:3000/user/:id <br>
+localhost:3000/user/:id/createpost <br>
+localhost:3000/user/:id/:post_id <br>
+localhost:3000/user/:id/:post_id/edit <br>
 
 <br>
 
@@ -229,6 +230,9 @@ savitae_db
 |    React     | _Front End rendering._ |
 | React Router | _Front End rendering._ |
 |     CORS     | _Front End rendering._ |
+|Ruby on Rails | _Backend Server._      |
+|     bcrypt   | _Authorization._       |
+|     JWT      | _Authorization._       |
 
 <br>
 
