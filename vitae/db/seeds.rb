@@ -7,5 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-users = User.create!([{username: 'Yolea', password: '123456'}])
+# users = User.create!([{username: 'Yolea', password: '123456'}])
+# p `#{users.count} users created.`
 
+# posts = Post.create!([{content: 'I love Saint Albans', image_url: 'https://imgur.com/gGiEmYe', user_id: 1}])
+# p `#{posts.count} users created.`
+
+comments = Post.create!([{content: 'I love Saint Albans', image_url: 'https://imgur.com/gGiEmYe', user_id: 1}])
+p `#{posts.count} users created.`
