@@ -1,16 +1,17 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :update, :destroy]
+  # before_action :authorize_request
 
   # GET /posts
   def index
     @posts = Post.all
 
-    render json: @posts
+    render json: @posts, include: :comments, status: :ok
   end
 
   # GET /posts/1
   def show
-    render json: @post
+    render json: @post, include: :comments, status: :ok
   end
 
   # POST /posts
@@ -27,7 +28,7 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   def update
     if @post.update(post_params)
-      render json: @post
+      render json: @post, include: :comments, status: :ok
     else
       render json: @post.errors, status: :unprocessable_entity
     end
@@ -38,6 +39,13 @@ class PostsController < ApplicationController
     @post.destroy
   end
 
+  # def add_comment
+  #   @comment = Comment.new(post_id: params[:post_id])
+  #   # @comment = Comment.find(params[:comment_id])
+  #   @post.comments << @comment
+  #   render json: @post, include: :comments
+  # end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
@@ -46,6 +54,6 @@ class PostsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def post_params
-      params.require(:post).permit(:content, :image_url, :date, :user_id)
+      params.require(:post).permit(:content, :image_url, :user_id)
     end
 end
