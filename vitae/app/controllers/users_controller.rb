@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  # before_action :set_user, only: [:show, :update, :destroy]
-  # before_action :authorize_request
+  before_action :set_user, only: [:show, :update, :destroy]
+  # before_action :authorize_request, except: :create
 
   # GET /users
   def index
@@ -11,9 +11,8 @@ class UsersController < ApplicationController
 
   # GET /users/1
   def show
-    @user = User.find(params[:id])
-   
-    render json: @user, include: :posts, status: :ok
+
+    render json: @current_user, include: :posts, status: :ok
   end
 
   # POST /users
@@ -30,16 +29,16 @@ class UsersController < ApplicationController
 
   # PATCH/PUT /users/1
   def update
-    if @user.update(user_params)
-      render json: @user
+    if @current_user.update(user_params)
+      render json: @current_user
     else
-      render json: @user.errors, status: :unprocessable_entity
+      render json: @current_user.errors, status: :unprocessable_entity
     end
   end
 
   # DELETE /users/1
   def destroy
-    @user.destroy
+    @current_user.destroy
   end
 
   private
