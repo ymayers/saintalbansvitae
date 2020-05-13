@@ -1,10 +1,17 @@
 class User < ApplicationRecord
   has_secure_password
 
-  validates :password, length: { minimum: 6 }
   validates :username, uniqueness: true, presence: true
-  
-  has_many  :posts, dependent: :destroy
-  has_many  :comments, dependent: :destroy
+  validates :password, length: { minimum: 6 }
+
+
+  def return_data
+    {
+      id: id,
+      username: username,
+      created_at: created_at,
+      updated_at: updated_at
+    }
+  end
  
 end
