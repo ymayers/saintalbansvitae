@@ -13,8 +13,8 @@
 # users = User.create!([])
 
 
-@posts = Post.create!([{content: 'I love Saint Albans', image_url: 'https://imgur.com/gGiEmYe', user: @user.id} ])
+@posts = Post.create!([{content: 'I love Saint Albans', image_url: 'https://imgur.com/gGiEmYe', user: @user_id} ])
 # p `#{posts.count} users created.`
 
-@comments = Comment.create!([{content: 'Love the Post', post:@post.id, user: @user.id}])
+@comments = Comment.create!([{content: 'Love the Post', post:@post_id, user: @user_id}])
 # p `#{posts.count} comments created.`
