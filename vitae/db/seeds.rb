@@ -10,8 +10,11 @@
 # users = User.create!([{username: 'Yolea', password: '123456'}])
 # p `#{users.count} users created.`
 
-# posts = Post.create!([{content: 'I love Saint Albans', image_url: 'https://imgur.com/gGiEmYe', user_id: 1}])
+# users = User.create!([{username: 'Idrees', password: '123456'}])
+
+
+# posts = Post.create!([{content: 'I love Saint Albans', image_url: 'https://imgur.com/gGiEmYe', user_id: 1} ])
 # p `#{posts.count} users created.`
 
-comments = Post.create!([{content: 'I love Saint Albans', image_url: 'https://imgur.com/gGiEmYe', user_id: 1}])
-p `#{posts.count} users created.`
+# comments = Comment.create!([{content: 'Love the Post', post_id: 1, user_id: 1}])
+# p `#{posts.count} comments created.`
