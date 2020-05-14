@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-# @users = User.create!([{username: 'Yolea', password: '123456'},{username: 'Jill', password: '123456'}, {username: 'Idrees', password: '123456'}])
+@users = User.create!([{username: 'Yolea', password: '123456'}])
 # p `#{users.count} users created.`
 
 # users = User.create!([])
