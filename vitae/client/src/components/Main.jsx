@@ -10,7 +10,9 @@ class Main extends Component {
   }
 
   render() {
-    return 
+    return (
+      <h1>Hello</h1>
+    )
   }
 }
 

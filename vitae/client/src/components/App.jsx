@@ -22,21 +22,21 @@ class App extends Component {
 }
 
   
-  handleLogin = async () => {
-    const currentUser = await loginUser(loginData);
-    this.setState({currentUser})
-  }
+  // handleLogin = async (loginData) => {
+  //   const currentUser = await loginUser(loginData);
+  //   this.setState({currentUser})
+  // }
 
-  handleRegister = async () => {
-    const currentUser = await registerUser(registerData);
-    this.setState({currentUser})
-  }
+  // handleRegister = async (registerData) => {
+  //   const currentUser = await registerUser(registerData);
+  //   this.setState({currentUser})
+  // }
 
   confirmUser = async () => {
     const currentUser = await verifyUser();
     this.setState({ currentUser })
   }
-  handleLogout = () => {
+  handleLogout = () => {   
     localStorage.clear();
     this.setState({
       currentUser: null
