@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 
-class Signup extends Component {
-  state = {
+
+
+class Signup extends Component { 
+ state = {
     username: '',
     password: ''
   }
 
   handleChange = (e) => {
     const { name, value } = e.target;
-
     this.setState({
       [name]: value
     });
@@ -22,7 +23,7 @@ class Signup extends Component {
       <form onSubmit={(e) => {
         e.preventDefault();
         this.props.handleRegister(this.state);
-        this.props.history.push('/');
+        // this.props.history.push('/');
       }}>
         <h3>Sign up</h3>
         <label htmlFor="username">username:</label>
@@ -30,7 +31,7 @@ class Signup extends Component {
           id="username"
           type="text"
           name="username"
-          value={username}
+          value={this.username}
           onChange={this.handleRegister}
         />
         <br />
@@ -40,7 +41,7 @@ class Signup extends Component {
           id="password"
           type="password"
           name="password"
-          value={password}
+          value={this.password}
           onChange={this.handleRegister}
         />
         <br />

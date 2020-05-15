@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import {Link} from 'react-router-dom'
 
 class Signin extends Component {
   state = {
@@ -23,7 +23,7 @@ class Signin extends Component {
       <form onSubmit={(e) => {
         e.preventDefault();
         this.props.handleLogin(this.state);
-        // this.props.history.push('/');
+        this.props.history.push('/main');
       }}>
         <h3>Sign In</h3>
         <label htmlFor="username">username:</label>
@@ -46,7 +46,8 @@ class Signin extends Component {
         />
         <br />
         
-        <button>Submit</button>
+        {/*<Link to="/main"> <button>Submit</button> </Link>*/}
+      <button>Submit</button>
       </form>
     )
   }

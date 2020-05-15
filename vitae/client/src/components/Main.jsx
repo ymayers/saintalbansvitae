@@ -1,55 +1,62 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
+import { getAllPosts } from "../services/api-helper";
 
-import Signin from "./Sigin";
-import Signup from "./Signup";
+import { Route } from "react-router-dom"
+
+import ShowPosts from './ShowPosts'
 
 class Main extends Component {
-  // constructor() {
-  //   super();
+  constructor(props) {
+    super(props)
+    this.state = {
+      // currentUser: {
+      posts: [],
+    // }
+    }
+  }
+  
+  componentDidMount() {
 
-  //   this.state = {
-  //     posts: [],
-  //     comments: [],
-  //   };
-  // }
+    
 
-  // readAllPosts = async () => {
-  //   const posts = await getAllPosts();
-  //   this.setState({ posts });
-  // };
-  // readAllComments = async () => {
-  //   const flavors = await getAllComments();
-  //   this.setState({ foods });
-  // };
+    const {currentUser} = this.props
+    if (currentUser) {
+      this.readAllPosts()  
+      
+    }
+  }
 
-  render() {
+readAllPosts = async () => {
+    const posts = await getAllPosts();
+  this.setState({ posts });
+};
+  
+  
+render(){
     return (
       <main>
-      
-            
-       
+     
+        {/* <p>{this.state.currentUser.id}</p> */}
+     
+          {/* <p>{this.props.currentUser}</p> */}
+          {/* <ShowPosts posts={this.props.posts} /> */}
+        
         {/* <Route
-          path="/signup"
-          render={() => (
-            <Signup {...props} handleRegister={this.props.handleRegister} />
-            // <Login {...props} />
+          path="/posts"
+          render={(props) => (
+            <ShowPosts {...props} posts={this.props.posts} />
+  
           )}
         /> */}
-        {/* <Route
-          path="/flavors"
-          render={() => (
-            <ShowFlavors flavors={this.state.flavors} />
-            // <Login {...props} />
-          )}
-        />
-        <Route
-          path="/foods"
-          render={() => (
-            <ShowFoods foods={this.state.foods} />
-            // <Login {...props} />
-          )}
-        /> */}
+          
+      {/* {this.props.posts.map(post => (
+        <p key={this.id}>{this.posts.content}</p> &&
+        <img key={this.posts.id}src={this.posts.image_url}/>
+     )
+      )} */}
+        <div>hello</div>
+        {/* {props.id} */}
+        
       </main>
     );
   }
