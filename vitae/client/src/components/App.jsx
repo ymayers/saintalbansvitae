@@ -6,7 +6,7 @@ import Main from "./Main";
 import Header from "./shared/Header";
 import Signin from "./Signin";
 import Signup from "./Signup";
-
+import ShowPosts from './ShowPosts'
 
 import "./App.css";
 
@@ -15,6 +15,7 @@ import {
   registerUser,
   verifyUser,
   removeToken,
+  getAllPosts
 } from "../services/api-helper";
 
 class App extends Component {
@@ -24,6 +25,8 @@ class App extends Component {
 
   componentDidMount() {
     this.confirmUser();
+    this.readAllPosts();
+    // this.readAllComments();
   }
 
   handleLogin = async (loginData) => {
@@ -48,6 +51,16 @@ class App extends Component {
     });
     removeToken();
   };
+
+  readAllPosts = async () => {
+    const posts = await getAllPosts();
+  this.setState({ posts});
+  };
+  
+//   readAllComments = async () => {
+//     const posts = await getAllComments();
+//   this.setState({ commemts});
+// };
 
   render() {
     return (
@@ -79,7 +92,11 @@ class App extends Component {
             <Signup {...props} handleRegister={this.handleRegister} />
           )}
         />
-
+       {/* <Route
+          path=""
+          render={() => ( <ShowPosts posts={this.state.posts}/>
+            )}
+            /> */}
       
       </div>
     );

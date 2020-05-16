@@ -3,7 +3,7 @@ import { getAllPosts } from "../services/api-helper";
 
 import { Route } from "react-router-dom"
 
-import ShowPosts from './ShowPosts'
+// import ShowPosts from './ShowPosts'
 
 class Main extends Component {
   constructor(props) {
@@ -11,31 +11,25 @@ class Main extends Component {
     this.state = {
       // currentUser: {
       posts: [],
-    // }
     }
-  }
-  
-  componentDidMount() {
-
     
+  }
+
+  
+  
+  componentDidUpdate() {
 
     const {currentUser} = this.props
     if (currentUser) {
-      this.readAllPosts()  
-      
+      getAllPosts()     
     }
   }
-
-readAllPosts = async () => {
-    const posts = await getAllPosts();
-  this.setState({ posts });
-};
   
   
 render(){
     return (
       <main>
-     
+        {/* <ShowPosts posts={this.props.posts} user_id={this.props.currentUser_id}/> */}
         {/* <p>{this.state.currentUser.id}</p> */}
      
           {/* <p>{this.props.currentUser}</p> */}
