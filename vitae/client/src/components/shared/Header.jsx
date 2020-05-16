@@ -13,7 +13,7 @@ function Header(props) {
       <Link to="/signin">Sign In </Link>|
       <Link to='/signup'> Signup</Link>
       {/* )} */}
-      <button onClick={props.handleLogout}>Logout</button>
+    <Link to='/'> <button onClick={props.handleLogout}>Logout</button></Link> 
       </header>
   )
 }

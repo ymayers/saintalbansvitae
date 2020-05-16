@@ -21,6 +21,8 @@ import {
 class App extends Component {
   state = {
     currentUser: null,
+    posts: [],
+    comments: [],
   };
 
   componentDidMount() {
@@ -28,6 +30,11 @@ class App extends Component {
     this.readAllPosts();
     // this.readAllComments();
   }
+
+  readAllPosts = async () => {
+    const posts = await getAllPosts();
+  this.setState({ posts});
+  };
 
   handleLogin = async (loginData) => {
     const currentUser = await loginUser(loginData);
@@ -52,10 +59,7 @@ class App extends Component {
     removeToken();
   };
 
-  readAllPosts = async () => {
-    const posts = await getAllPosts();
-  this.setState({ posts});
-  };
+ 
   
 //   readAllComments = async () => {
 //     const posts = await getAllComments();
@@ -92,11 +96,11 @@ class App extends Component {
             <Signup {...props} handleRegister={this.handleRegister} />
           )}
         />
-       {/* <Route
-          path=""
-          render={() => ( <ShowPosts posts={this.state.posts}/>
+       <Route
+          path="/posts"
+          render={(props) => (<ShowPosts {...props} posts={this.state.posts}/>
             )}
-            /> */}
+            />
       
       </div>
     );

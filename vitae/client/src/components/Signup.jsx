@@ -23,7 +23,7 @@ class Signup extends Component {
       <form onSubmit={(e) => {
         e.preventDefault();
         this.props.handleRegister(this.state);
-        // this.props.history.push('/main');
+        // this.props.history.push('/posts');
       }}>
         <h3>Sign up</h3>
         <label htmlFor="username">username:</label>

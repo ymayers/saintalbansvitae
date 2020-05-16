@@ -23,7 +23,7 @@ class Signin extends Component {
       <form onSubmit={(e) => {
         e.preventDefault();
         this.props.handleLogin(this.state);
-        this.props.history.push('/main');
+        this.props.history.push('/posts');
       }}>
         <h3>Sign In</h3>
         <label htmlFor="username">username:</label>

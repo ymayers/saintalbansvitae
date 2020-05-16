@@ -45,13 +45,13 @@ export const removeToken = () => {
 // ========================================
 
 export const getAllPosts = async (id) => {
-  const resp = await api.get(`/users/${id}/posts`);
+  const resp = await api.get(`/users/:${id}/posts`);
   // const resp = await api.get(`users/${id}/posts`);
   return resp.data;
 };
 
 export const getOnePost = async (id, post_id) => {
-  const resp = await api.get(`users/${id}/posts/${post_id}`);
+  const resp = await api.get(`users/:${id}/posts/:${post_id}`);
   return resp.data;
 };
 
@@ -61,12 +61,12 @@ export const makePost = async (postData) => {
 };
 
 export const putPost = async (id, postData) => {
-  const resp = await api.put(`users/${id}/posts/${id}`, postData);
+  const resp = await api.put(`users/:${id}/posts/:${id}`, postData);
   return resp.data;
 };
 
 export const destroyPost = async (id) => {
-  const resp = await api.delete(`users/user.${id}/posts/${id}`);
+  const resp = await api.delete(`users/:user.${id}/posts/:${id}`);
   return resp;
 };
 

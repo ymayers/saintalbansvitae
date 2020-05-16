@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getAllPosts } from "../services/api-helper";
+// import { getAllPosts } from "../services/api-helper";
 
 import { Route } from "react-router-dom"
 
@@ -8,22 +8,22 @@ import { Route } from "react-router-dom"
 class Main extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      // currentUser: {
-      posts: [],
-    }
+    // this.state = {
+    //   // currentUser: {
+    //   posts: [],
+    // }
     
   }
 
   
   
-  componentDidUpdate() {
+  // componentDidUpdate() {
 
-    const {currentUser} = this.props
-    if (currentUser) {
-      getAllPosts()     
-    }
-  }
+  //   const {currentUser} = this.props
+  //   if (currentUser) {
+  //     getAllPosts()     
+  //   }
+  // }
   
   
 render(){
