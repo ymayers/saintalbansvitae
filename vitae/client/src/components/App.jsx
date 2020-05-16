@@ -2,11 +2,14 @@ import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { Route, Link } from "react-router-dom";
 
-import Main from "./Main";
+// import Main from "./Main";
 import Header from "./shared/Header";
 import Signin from "./Signin";
 import Signup from "./Signup";
-import ShowPosts from './ShowPosts'
+import ShowPosts from "./ShowPosts";
+import Post from "./Post"
+import CreatePost from "./CreatePost"
+import EditPost from "./EditPost"
 
 import "./App.css";
 
@@ -15,7 +18,10 @@ import {
   registerUser,
   verifyUser,
   removeToken,
-  getAllPosts
+  getAllPosts,
+  makePost,
+  putPost,
+  destroyPost,
 } from "../services/api-helper";
 
 class App extends Component {
@@ -31,11 +37,47 @@ class App extends Component {
     // this.readAllComments();
   }
 
+//***************************************************************
+//*******************************POSTS***************************
+//***************************************************************
+
   readAllPosts = async () => {
     const posts = await getAllPosts();
-  this.setState({ posts});
+    this.setState({ posts });
   };
 
+  createPost = async (postData) => {
+
+    const newPost = await makePost(postData);
+    this.setState(prevState => ({
+      posts: [...prevState.posts, newPost]
+    }))
+  }
+
+  updatePost = async (id, postData) => {
+
+    const updatedPost = await putPost(id, postData);
+    this.setState(prevState => ({
+      posts: prevState.posts.map(post => {
+        return post.id === parseInt(id) ? updatedPost : post 
+      })
+    }))
+  }
+
+  deletePost = async (id) => {
+
+    const removePost = await destroyPost(id);
+    this.setState(prevState => ({
+      posts: prevState.posts.filter(post => {
+      return post.id !== id
+    })}))
+  }
+
+//***************************************************************
+//*******************************AUTH****************************
+//***************************************************************
+  
+  
   handleLogin = async (loginData) => {
     const currentUser = await loginUser(loginData);
     this.setState({ currentUser });
@@ -59,12 +101,10 @@ class App extends Component {
     removeToken();
   };
 
- 
-  
-//   readAllComments = async () => {
-//     const posts = await getAllComments();
-//   this.setState({ commemts});
-// };
+  //   readAllComments = async () => {
+  //     const posts = await getAllComments();
+  //   this.setState({ commemts});
+  // };
 
   render() {
     return (
@@ -78,12 +118,12 @@ class App extends Component {
           <h1>The Saint Albans Vitae</h1>
         </Link>
 
-        <Route
+        {/* <Route
           path="/main"
           render={(props) => (
             <Main {...props} currentUser={this.state.currentUser} />
           )}
-        />
+        /> */}
         <Route
           path="/signin"
           render={(props) => (
@@ -96,13 +136,48 @@ class App extends Component {
             <Signup {...props} handleRegister={this.handleRegister} />
           )}
         />
-       <Route
-          path="/posts"
-          render={(props) => (<ShowPosts {...props} posts={this.state.posts}/>
-            )}
+        <Route
+          exact path="/posts"
+          render={(props) => <ShowPosts {...props} posts={this.state.posts} />}
+        />
+
+        <Route
+          exact path="/posts/:id"
+          render={(props) => {
+            const post = this.state.posts.find((post) => {
+              return post.id === parseInt(props.match.params.id)
+            })
+           return <Post
+             {...props}
+             currentUser={this.state.currentUser}
+             post={post}
+             deletePost={this.deletePost}
             />
-      
+          }}
+        />
+
+        <Route path="/createpost" render={(props) => (
+          <CreatePost {...props} createPost={this.createPost}/>
+        )} />
+        
+        <Route
+          path="/posts/:id/edit"
+          render={(props) => {
+            const post = this.state.posts.find((post) => {
+              return post.id === parseInt(props.match.params.id)
+            })
+           return <EditPost
+             {...props}
+             post={post}
+             updatePost={this.updatePost}
+            />
+          }}
+        />
+
+
       </div>
+
+
     );
   }
 }

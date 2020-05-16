@@ -23,7 +23,7 @@ class Signup extends Component {
       <form onSubmit={(e) => {
         e.preventDefault();
         this.props.handleRegister(this.state);
-        // this.props.history.push('/posts');
+        this.props.history.push('/posts');
       }}>
         <h3>Sign up</h3>
         <label htmlFor="username">username:</label>
@@ -31,8 +31,8 @@ class Signup extends Component {
           id="username"
           type="text"
           name="username"
-          value={this.username}
-          onChange={this.handleRegister}
+          value={username}
+          onChange={this.handleChange}
         />
         <br />
         <br />
@@ -41,8 +41,8 @@ class Signup extends Component {
           id="password"
           type="password"
           name="password"
-          value={this.password}
-          onChange={this.handleRegister}
+          value={password}
+          onChange={this.handleChange}
         />
         <br />
         
