@@ -5,15 +5,20 @@ function Header(props) {
   return (
     <header>
       
-     {/* {props.currentUser ?
+     {props.currentUser ?
       <React.Fragment>  
-          <p>{props.currentUser.username}</p>
-          <button onClick={this.props.handleLogout}>Logout</button>
-        </React.Fragment>   : ( */}
+          <p>Welcome {props.currentUser.username}!</p>
+        <Link to="/"><button onClick={props.handleLogout}>Logout</button></Link>
+        </React.Fragment>   : (<>
       <Link to="/signin">Sign In </Link>|
-      <Link to='/signup'> Signup</Link>
-      {/* )} */}
-    <Link to='/'> <button onClick={props.handleLogout}>Logout</button></Link> 
+          <Link to='/signup'> Signup</Link>
+          
+          </>
+      )} 
+      {/* <Link to='/'> <button onClick={props.handleLogout}>Logout</button></Link>  */}
+      <Link to="/posts">
+          <h1>The Saint Albans Vitae</h1>
+        </Link>
       </header>
   )
 }

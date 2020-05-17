@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { Route, Link } from "react-router-dom";
 
-// import Main from "./Main";
+import Landing from "./Landing";
 import Header from "./shared/Header";
 import Signin from "./Signin";
 import Signup from "./Signup";
@@ -114,16 +114,13 @@ class App extends Component {
           handleLogout={this.handleLogout}
         />
 
-        <Link to="/">
-          <h1>The Saint Albans Vitae</h1>
-        </Link>
 
-        {/* <Route
-          path="/main"
-          render={(props) => (
-            <Main {...props} currentUser={this.state.currentUser} />
+        <Route
+          exact path="/"
+          render={() => (
+            <Landing/>
           )}
-        /> */}
+        />
         <Route
           path="/signin"
           render={(props) => (

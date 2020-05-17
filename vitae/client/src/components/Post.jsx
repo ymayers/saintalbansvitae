@@ -9,7 +9,9 @@ function Post(props) {
     <div>
       {props.post && (
         <>
-          <img src={props.post.image_url} />
+        <img src={"https://66.media.tumblr.com/ba7f7d7db109cd3b8c81124194e6f675/tumblr_ooxr8h2mlX1qa8arko5_250.gif"
+} />
+       {/* <img src={props.post.image_url} /> */}
           <div>{props.post.content}</div>
 
           {props.currentUser && props.currentUser.id === props.post.user_id && (

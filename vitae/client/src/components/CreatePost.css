@@ -1,0 +1,33 @@
+.create-post {
+margin: 5em 0 0 0;
+  border: 2px solid black;
+
+}
+.post-form-holder {
+  display: grid;
+  grid-template-columns: 1fr 40% 1fr;
+  margin: 5em 0 0 0;
+  border: 6px solid orange;
+}
+
+.post-form-container {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-rows: 15% 1fr 1fr;
+  border: 2px solid red;
+  justify-content: center;
+}
+
+
+.create-post-form{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 3em 0 0 0;
+  border: 2px solid blue;
+  width: 100%;
+  height: 100%;
+}
+
+input {
+  outline: none;
+}

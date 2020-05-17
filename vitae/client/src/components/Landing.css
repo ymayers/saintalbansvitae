@@ -1,0 +1,9 @@
+.hero {
+  background-image: url(./assets/images/ellaf1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid blue;
+  height: 88vh
+
+}

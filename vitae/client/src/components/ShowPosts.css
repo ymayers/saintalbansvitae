@@ -1,0 +1,68 @@
+.posts {
+ 
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 4% 1fr 8% ;
+  border: 4px solid black;
+  margin: 0 auto;
+  background-image: none;
+}
+
+.posts-heading {
+  margin-bottom: 1em;
+}
+
+.posts-cont-2 {
+  display: grid;
+  height: 100%;
+  margin: 3em 0 3em 0;
+  border: 6px solid red;
+  grid-template-columns: 30% 1fr;
+  padding-bottom: 2em;
+}
+
+.posts-cont {
+  height: 100%;
+  display: grid;
+  /* margin: 1em 0 1em 0; */
+  padding: 1em;
+  border: 2px solid blue;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+.create-post-link{
+  margin: 8em 0 2em 0;
+  padding: 2em 0 2em 0;
+}
+.inner-post-cont{
+  margin: 0 auto;
+  align-self: center;
+}
+
+/*******************For iPhone*********************/
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+
+    .posts-cont-2 {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+    
+    .posts-cont {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+    }
+
+    .my-posts {
+      display: none;
+      display: hide;
+    }
+
+}
