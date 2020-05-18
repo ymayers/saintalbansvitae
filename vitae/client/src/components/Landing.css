@@ -3,7 +3,26 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border: 3px solid blue;
-  height: 88vh
+  height: 83vh
 
 }
+
+
+
+
+
+/*******************For iPhone*********************/
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+  .hero{
+    background-image: url(./assets/images/billie1.png);
+    height: 83vh;
+    padding: .5em 0;
+
+  }
+
+  }

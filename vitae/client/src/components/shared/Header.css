@@ -1,0 +1,46 @@
+.hero-header {
+  font-family: 'Unica One', cursive;
+  font-size: 80px;
+  color: red;
+  margin-top: -.05px;
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 1px solid black;
+}
+
+.signin {
+  color: black;
+  font-size: 16px;
+  font-family: 'Cinzel', serif;
+}
+
+.welcome {
+  font-family: 'Cinzel', serif;
+}
+
+.logout-button {
+  font-family: 'Cinzel', serif;
+}
+
+/*******************For iPhone*********************/
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    .hero-header {
+      font-size: 40px;
+    }
+  }
+
+    /*******************For iPad*********************/
+
+    @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+      .hero-header {
+        font-size: 60px;
+      }
+
+    }

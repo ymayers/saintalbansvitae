@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import {Link} from 'react-router-dom'
 
 class Signin extends Component {
   state = {
@@ -20,13 +19,40 @@ class Signin extends Component {
     const { username, password } = this.state;
 
     return (
-      <form onSubmit={(e) => {
+      <section className="sign-up-container">
+      <div className="sign-up-images">
+        <img
+          src="https://imgur.com/UuZebXW.png"
+          height="225"
+          width="250"
+          alt=""
+        />
+        <img
+          src="https://imgur.com/UuZebXW.png"
+          height="225"
+          width="250"
+          alt=""
+        />
+        <img
+          src="https://imgur.com/UuZebXW.png"
+          height="225"
+          width="250"
+          alt=""
+        />
+        <img
+          src="https://imgur.com/UuZebXW.png"
+          height="225"
+          width="250"
+          alt=""
+        />
+      </div>
+      <form className="sign-up-form" onSubmit={(e) => {
         e.preventDefault();
         this.props.handleLogin(this.state);
         this.props.history.push('/posts');
       }}>
-        <h3>Sign In</h3>
-        <label htmlFor="username">username:</label>
+        <h3 className="sign-up-header">Sign In</h3>
+        <label className="sign" htmlFor="username">username:</label>
         <input
           id="username"
           type="text"
@@ -36,7 +62,7 @@ class Signin extends Component {
         />
         <br />
         <br />
-        <label htmlFor="password">password:</label>
+        <label className="sign" htmlFor="password">password:</label>
         <input
           id="password"
           type="password"
@@ -47,8 +73,38 @@ class Signin extends Component {
         <br />
         
         {/*<Link to="/main"> <button>Submit</button> </Link>*/}
-      <button>Submit</button>
-      </form>
+          <button className="sign-up-button">Submit</button>
+          
+        </form>
+
+        <div className="sign-up-images">
+        <img
+          src="https://imgur.com/UuZebXW.png"
+          height="225"
+          width="250"
+          alt=""
+        />
+        <img
+          src="https://imgur.com/UuZebXW.png"
+          height="225"
+          width="250"
+          alt=""
+        />
+        <img
+          src="https://imgur.com/UuZebXW.png"
+          height="225"
+          width="250"
+          alt=""
+        />
+        <img
+          src="https://imgur.com/UuZebXW.png"
+          height="225"
+          width="250"
+          alt=""
+        />
+      </div>
+
+        </section>
     )
   }
 }

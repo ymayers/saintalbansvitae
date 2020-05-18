@@ -1,10 +1,14 @@
 import React from 'react'
 
-function Layout() {
-  return (
-    <>
-      </>
+import Header from './Header'
+
+const Layout = (props) => (
+    <div className="layout">
+      <Header />
+    <div>{props.children}</div>
+      
+      </div>
   )
-}
+
 
 export default Layout

@@ -8,9 +8,7 @@ class Landing extends Component {
 render(){
   return (
       <>
-      <main className="hero">
-       
-        
+      <main className="hero">    
       </main>
   </>
     );

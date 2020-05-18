@@ -1,0 +1,130 @@
+.sign-up-container {
+  display: grid;
+  grid-template-columns: 1fr 40% 1fr;
+  height: 100%;
+}
+
+
+.sign-up-form {
+  box-shadow: 1px 4px 6px rgba(255, 0, 0, 0.685);
+  height: 30%;
+  padding-top: 1em;
+  margin: 10em 3em 0 3em;
+
+}
+
+.sign-up-header {
+  margin: 1em;
+  padding: 1em 0 1em 0;
+  font-family: 'Unica One', cursive;
+  font-size: 25px;
+  background-color: rgba(255, 0, 0, 0.685);
+  text-shadow: 1px 1px 1px white;
+
+}
+
+.sign {
+  font-family: 'Cinzel', serif;
+  padding: 8px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.sign-up-button {
+  margin: 5em;
+  font-family: 'Cinzel', serif;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 1px 3px 4px rgba(255, 0, 0, 0.685);
+
+}
+
+.sign-up-images img {
+  margin: 1em;
+  box-shadow: 1px 3px 4px red;
+  
+}
+
+/*******************For iPhone*********************/
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    .sign-up-container {
+       padding: 6em 6em 18em 6em;
+       background-image: url("./assets/images/billie2.jpg");
+       background-repeat: none;
+      background-size: cover;
+      background-position: center;
+      height: 39vh
+
+    }
+
+    .sign-up-images img {
+      display: none;
+    }
+
+    .sign-up-container {
+      grid-template-columns: 1fr;
+
+    }
+    .sign-up-form {
+
+      height: 80%;
+      margin: 40px 8px 0 8px;
+    }
+    .sign {
+      color:white;
+      text-shadow: 1px 1px 5px black;
+    }
+
+    .sign-up-button {
+      margin: 2em 0 3em 0;
+    }
+
+  }
+
+  /*******************For iPad*********************/
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .sign-up-container {
+      padding: 10em 6em 20em 6em;
+      background-image: url("./assets/images/ellaf2.jpg");
+      background-repeat: none;
+      background-size: cover;
+      background-position: center;
+      height: 38vh
+
+   }
+
+   .sign-up-header {
+     color: white;
+   }
+
+   .sign-up-images img {
+     display: none;
+   }
+
+   .sign-up-container {
+     grid-template-columns: 1fr;
+
+   }
+   .sign-up-form {
+     height: 90%;
+     margin: 0 8px;
+   }
+
+   .sign {
+   color: white;
+  }
+
+   .sign-up-button {
+     margin: 2em 0 3em 0;
+   }
+
+}

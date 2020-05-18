@@ -9,7 +9,7 @@ function ShowPosts(props) {
     <div className="posts">
       <h3 className="posts-heading">Posts</h3>
       <div className="posts-cont-2">
-        <React.Fragment className="my-posts">"My Posts"</React.Fragment>
+        <div className="my-posts">My Posts</div>
         <div className="posts-cont">
           
           {props.posts.map((post) => (
@@ -17,6 +17,8 @@ function ShowPosts(props) {
               <Link to={`/posts/${post.id}`}>
                 <img
                   className="post-image"
+                  height="225px"
+                  width="250px"
                   src={
                     "https://66.media.tumblr.com/ba7f7d7db109cd3b8c81124194e6f675/tumblr_ooxr8h2mlX1qa8arko5_250.gif"
                   }
@@ -27,12 +29,12 @@ function ShowPosts(props) {
             </div>
           ))}
         </div>
-      </div>
-      <section className="create-post-link">
+        <div></div>
         <Link to="/createpost">
-          <button>Create Post</button>
+          <button className="create-post-button">Create Post</button>
         </Link>
-      </section>
+      </div>
+
     </div>
   );
 }
