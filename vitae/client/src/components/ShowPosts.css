@@ -1,26 +1,22 @@
 .posts {
- 
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-rows: 4% 1fr;
-  border: 4px solid black;
-  margin: 0 auto;
-  /* background-image: none; */
+ 
 }
 
 .posts-heading {
   margin-bottom: 15em;
   font-family: 'Cinzel', serif;
+  text-shadow: 1px 1px 2px black;
 }
 
 .posts-cont-2 {
   display: grid;
   height: 100%;
-  /* margin: 3em 0 3em 0; */
-  border: 6px solid red;
-  grid-template-columns: 30% 1fr;
-  padding-bottom: 2em;
+  grid-template-columns: 35% 1fr;
+  
 }
 
 .inner-post-cont{
@@ -36,17 +32,27 @@
 .posts-cont {
   height: 100%;
   display: grid;
-  padding: 1em;
+  padding: .5em;
   grid-template-columns: 1fr 1fr;
   font-family: 'Cinzel', serif;
-  background-color: lightgray;
+  background-color: rgba(211, 211, 211, 0.479);
+  box-shadow: 1px 3px 8px black;
 }
+
 .create-post-button{
   font-family: 'Cinzel', serif;
+  margin-top: 1em;
+  height: 4%
+}
+.create-post-link {
+  height: 10%;
+  margin: -2.5em;
 }
 
 .my-posts {
   font-family: 'Cinzel', serif;
+  background-color:rgba(255, 0, 0, 0.685);
+  padding-top: 10px;
 }
 
 /*******************For iPhone*********************/
@@ -59,11 +65,11 @@
 
     .posts-cont-2 {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
+      /* grid-template-rows: 1fr; */
     }
     
     .posts-cont {
-      grid-template-rows: 1fr;
+      /* grid-template-rows: 1fr; */
       grid-template-columns: 1fr;
     }
 
@@ -71,5 +77,28 @@
       display: none;
       display: hide;
     }
+
+}
+
+
+/*******************For iPad*********************/
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+
+.posts {
+  margin-top: -3em;
+}
+
+.posts-heading {
+  height: 50%;
+}
+
+  .post-image {
+    height: 120px;
+    width: 120px;
+  }
 
 }

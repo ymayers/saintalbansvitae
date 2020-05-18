@@ -27,7 +27,7 @@ class CreatePost extends Component {
         <section className="post-form-holder">
           <div></div>
           <section className="post-form-container">
-          <h2>Create Post</h2>
+          <h2 className="create-post-heading">Create Post</h2>
       <form className="create-post-form" onSubmit={(e) => {
         e.preventDefault();
         this.props.createPost(this.state)
@@ -36,7 +36,7 @@ class CreatePost extends Component {
 
               
 
-        <label htmlFor="image_url">Image URL:</label>      
+        <label className="sign" htmlFor="image_url">Image URL:</label>      
         <input
           id="image_url"
           name="image_url"
@@ -45,7 +45,7 @@ class CreatePost extends Component {
           value={image_url}
               />
 
-        <label htmlFor="content">Content:</label>    
+        <label className="sign" htmlFor="content">Content:</label>    
         <textarea
           id="content"
           name="content"
@@ -56,7 +56,7 @@ class CreatePost extends Component {
                 
               />
         
-        <button className="submit">Submit</button>
+        <button className="submit-button">Submit</button>
             </form>
             
           </section>

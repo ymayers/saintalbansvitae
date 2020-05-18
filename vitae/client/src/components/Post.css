@@ -1,0 +1,48 @@
+.post-container {
+  height: 75vh;
+  padding-top: 3em;
+}
+
+.post-heading {
+  font-family: "Unica One", cursive;
+  font-size: 40px;
+  text-shadow: 1px 1px 1px white;
+  padding: 1em 0 1em 0;
+  background-color: rgba(255, 0, 0, 0.685);
+  box-shadow: 1px 3px 4px black;
+  margin: 2em 8em 3em 8em;
+}
+
+.post-content {
+ font-family: "Cinzel", serif;
+  padding: 2em;
+}
+
+/*******************For iPhone*********************/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .post-heading {
+    padding: 0;
+    margin: 0 10px 50px 10px;
+  }
+
+  .post-content {
+    padding: 3em;
+  }
+}
+
+/*******************For iPad*********************/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .post-container{
+    width: 95%;
+    padding: 0;
+  }
+
+  .post-heading {
+    margin: 0 2em 3.5em 2em;
+  }
+
+
+}

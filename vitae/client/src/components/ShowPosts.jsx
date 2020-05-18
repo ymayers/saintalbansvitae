@@ -7,9 +7,17 @@ import "./ShowPosts.css";
 function ShowPosts(props) {
   return (
     <div className="posts">
-      <h3 className="posts-heading">Posts</h3>
+      <h3 className="posts-heading">Latest Posts</h3>
       <div className="posts-cont-2">
-        <div className="my-posts">My Posts</div>
+        <div className="my-posts">
+        
+          <h3>My Posts</h3>
+          
+          <Link className="create-post-link" to="/createpost">
+          <button className="create-post-button">Create Post</button>
+        </Link>
+
+          </div>
         <div className="posts-cont">
           
           {props.posts.map((post) => (
@@ -29,10 +37,10 @@ function ShowPosts(props) {
             </div>
           ))}
         </div>
-        <div></div>
-        <Link to="/createpost">
+        {/* <div className="show-post-space"></div> */}
+        {/* <Link className="create-post-link" to="/createpost">
           <button className="create-post-button">Create Post</button>
-        </Link>
+        </Link> */}
       </div>
 
     </div>

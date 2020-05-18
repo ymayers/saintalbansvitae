@@ -1,13 +1,12 @@
 .end {
-  display: inline;
+  display: inline-block;
   font-family: "Cinzel", serif;
-  
+  background-color: white;
+  padding: 5px 0 0 0;
+  width: 100%;
 }
 
-.footer {
-  align-content: center;
-  height: 100%;
-}
+
 
 /*******************For iPhone*********************/
 
