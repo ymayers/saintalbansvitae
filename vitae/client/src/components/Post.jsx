@@ -9,12 +9,11 @@ function Post(props) {
   
   return (
     <div className="post-container">
-      <h2 className="post-heading">Edit Post</h2>
+      <h2 className="post-heading">Post Detail</h2>
       {props.post && (
         <>
-        <img className="post-image" src={"https://66.media.tumblr.com/ba7f7d7db109cd3b8c81124194e6f675/tumblr_ooxr8h2mlX1qa8arko5_250.gif"
-} />
-       {/* <img src={props.post.image_url} /> */}
+        <img className="post-image" src={props.post.image_url} height="350px" width="475px"alt=""/>
+  
           <div className="post-content">{props.post.content}</div>
 
           {props.currentUser && props.currentUser.id === props.post.user_id && (
@@ -26,9 +25,9 @@ function Post(props) {
                 props.history.push('/posts')
               }}>Delete</button>
             </>
-          )}
+          )}{<h2 className="comments">Comments</h2>}
           {props.post.comments.map((comment) => (
-            <p key={comment.id}>{comment.content}</p>
+            <p className="comment-content" key={comment.id}>{comment.content}</p>
           ))}
         </>
       )}

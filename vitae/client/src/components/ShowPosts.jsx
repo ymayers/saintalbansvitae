@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Ella2 from "../assets/images/ellaf2.jpg"
+import "./assets/images/mural4.jpeg"
 
 import "./ShowPosts.css";
 
@@ -27,9 +27,8 @@ function ShowPosts(props) {
                   className="post-image"
                   height="225px"
                   width="250px"
-                  src={
-                    "https://66.media.tumblr.com/ba7f7d7db109cd3b8c81124194e6f675/tumblr_ooxr8h2mlX1qa8arko5_250.gif"
-                  }
+                  src={post.image_url}
+                  alt="SA VITAE"
                 />
               </Link>
 
@@ -37,10 +36,7 @@ function ShowPosts(props) {
             </div>
           ))}
         </div>
-        {/* <div className="show-post-space"></div> */}
-        {/* <Link className="create-post-link" to="/createpost">
-          <button className="create-post-button">Create Post</button>
-        </Link> */}
+    
       </div>
 
     </div>

@@ -25,6 +25,7 @@ class CreatePost extends Component {
       <div className="create-post">
         
         <section className="post-form-holder">
+          
           <div></div>
           <section className="post-form-container">
           <h2 className="create-post-heading">Create Post</h2>
@@ -33,8 +34,6 @@ class CreatePost extends Component {
         this.props.createPost(this.state)
         this.props.history.push('/posts');
             }}>
-
-              
 
         <label className="sign" htmlFor="image_url">Image URL:</label>      
         <input
